@@ -38,11 +38,19 @@
   <ItemGroup>
     <Folder Include="app_client\e2e\" />
     <Folder Include="app_client\" />
+    <Folder Include="app_client\src\app\state\" />
+    <Folder Include="app_client\src\app\biz\" />
+    <Folder Include="app_client\src\app\entry\" />
     <Folder Include="app_server\" />
     <Folder Include="app_client\src\" />
     <Folder Include="app_client\src\app\" />
     <Folder Include="app_client\src\assets\" />
     <Folder Include="app_client\src\environments\" />
+    <Folder Include="app_server\json\" />
+    <Folder Include="app_server\mongo\" />
+    <Folder Include="app_server\mongo\controllers\" />
+    <Folder Include="app_server\mongo\models\" />
+    <Folder Include="app_server\mongo\routes\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app_client\e2e\app.e2e-spec.ts" />
@@ -50,6 +58,16 @@
     <TypeScriptCompile Include="app_client\src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="app_client\src\app\app.component.ts" />
     <TypeScriptCompile Include="app_client\src\app\app.module.ts" />
+    <TypeScriptCompile Include="app_client\src\app\state\app-state.ts" />
+    <TypeScriptCompile Include="app_client\src\app\state\blueprint-state.ts" />
+    <TypeScriptCompile Include="app_client\src\app\state\cost-state.ts" />
+    <TypeScriptCompile Include="app_client\src\app\state\dashboard-state.ts" />
+    <TypeScriptCompile Include="app_client\src\app\state\depreciation-state.ts" />
+    <TypeScriptCompile Include="app_client\src\app\state\funds-state.ts" />
+    <TypeScriptCompile Include="app_client\src\app\state\index.ts" />
+    <TypeScriptCompile Include="app_client\src\app\state\invest-state.ts" />
+    <TypeScriptCompile Include="app_client\src\app\state\liquidity-state.ts" />
+    <TypeScriptCompile Include="app_client\src\app\state\revenue-state.ts" />
     <TypeScriptCompile Include="app_client\src\environments\environment.prod.ts" />
     <TypeScriptCompile Include="app_client\src\environments\environment.ts" />
     <TypeScriptCompile Include="app_client\src\main.ts" />
@@ -78,6 +96,16 @@
   <ItemGroup>
     <Compile Include="app_client\karma.conf.js" />
     <Compile Include="app_client\protractor.conf.js" />
+    <Compile Include="app_server\json\application.js" />
+    <Compile Include="app_server\json\blueprint.js" />
+    <Compile Include="app_server\json\cost.js" />
+    <Compile Include="app_server\json\dashboard.js" />
+    <Compile Include="app_server\json\depreciation.js" />
+    <Compile Include="app_server\json\funds.js" />
+    <Compile Include="app_server\json\index.js" />
+    <Compile Include="app_server\json\invest.js" />
+    <Compile Include="app_server\json\liquidity.js" />
+    <Compile Include="app_server\json\revenue.js" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
