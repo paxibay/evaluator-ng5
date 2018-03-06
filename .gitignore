@@ -7,7 +7,7 @@
 /out-tsc
 
 # dependencies
-/node_modules
+/app_client/node_modules
 
 # IDEs and editors
 /.idea
