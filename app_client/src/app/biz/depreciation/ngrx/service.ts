@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs/Observable";
 
-import { DepreciationModel, Repository } from "./state";
+import { DepreciationModel, Repository } from "./../../../state";
 
 @Injectable()
 export class DepreciationService {

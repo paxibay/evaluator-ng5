@@ -1,12 +1,12 @@
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs/Observable";
 
-import { Product, BlueprintModel, DataRepository } from "./state";
+import { Product, BlueprintModel, Repository } from "./../../../state";
 
 @Injectable()
 export class BlueprintService {
 
-  constructor(private repo: DataRepository) { }
+  constructor(private repo: Repository) { }
 
     get Scope() {
         return this.repo.Scope;

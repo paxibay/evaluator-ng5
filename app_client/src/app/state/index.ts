@@ -7,3 +7,4 @@ export * from './funds-state';
 export * from './invest-state';
 export * from './liquidity-state';
 export * from './revenue-state';
+export * from './../apollo/data.repository';

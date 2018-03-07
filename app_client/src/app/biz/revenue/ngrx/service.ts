@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs/Observable";
 
-import { RevenueModel, Repository } from "./state";
+import { RevenueModel, Repository } from "./../../../state";
 
 @Injectable()
 export class RevenueService {
