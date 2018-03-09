@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs/Observable";
 
-import { Product, BlueprintModel, Repository } from "./../../../state";
+import { Product, BlueprintModel, Repository } from "./state";
 
 @Injectable()
 export class BlueprintService {

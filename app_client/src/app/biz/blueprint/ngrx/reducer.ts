@@ -33,23 +33,23 @@ export function reducer(state = initialState, action: blueprintAction.Actions): 
                 const scope = action.payload.scope;
                 const newProduct = new Product("Pro0" + scope);
 
-                const newState = update(state, {
-                    blueprintState: {
-                        scope: { $set: currentPayloadScope },
-                        entity: { products: { $push: [newProduct] }}
-                    }
-                });
-                return newState;
+                //const newState = update(state, {
+                //    blueprintState: {
+                //        scope: { $set: currentPayloadScope },
+                //        entity: { products: { $push: [newProduct] }}
+                //    }
+                //});
+                //return newState;
             }
 
             // remove project
-            const newState = update(state, {
-                blueprintState: {
-                    scope: { $set: currentPayloadScope },
-                    entity: { products: { $splice: [[currentPayloadScope, 1]] }} 
-                }
-            });
-            return newState;
+            //const newState = update(state, {
+            //    blueprintState: {
+            //        scope: { $set: currentPayloadScope },
+            //        entity: { products: { $splice: [[currentPayloadScope, 1]] }} 
+            //    }
+            //});
+        return state;
         }
 
         case blueprintAction.ActionTypes.LOAD_PRODUCTS: {
